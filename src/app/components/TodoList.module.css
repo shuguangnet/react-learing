@@ -1,0 +1,64 @@
+/* TodoList.module.css */
+
+/* 样式用于整个 Todo 列表 */
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 单个 Todo 项目样式 */
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 最后一项不需要边框 */
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+/* 已完成任务的样式 */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* 删除按钮的样式 */
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 删除按钮悬停效果 */
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+/* 切换按钮的样式 */
+.toggleButton {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: #27ae60;
+}
